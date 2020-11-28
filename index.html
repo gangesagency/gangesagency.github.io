@@ -384,14 +384,18 @@
             <div class="column large-6 tab-12">
 
                 <form action="https://formspree.io/f/xqkgdlao" method="POST">
+		    <div>
+                        <label for="sampleInput">Your Name</label>
+                        <input class="h-full-width" type="text" name="Name" placeholder="Full Name">
+                    </div>
                     <div>
                         <label for="sampleInput">Your Email</label>
-                        <input class="h-full-width" type="email" name="_replyto" placeholder="example@gmail.com" id="sampleInput">
+                        <input class="h-full-width" type="email" name="_replyto" placeholder="example@gmail.com">
                     </div>
                     <div>
                         <label for="sampleRecipientInput">Subject</label>
                         <div class="ss-custom-select">
-                            <select class="h-full-width" id="sampleRecipientInput">
+                            <select name="Category" class="h-full-width">
                                 <option value="General">General</option>
                                 <option value="Designing">Designing</option>
                                 <option value="Marketing">Marketing</option>
@@ -404,7 +408,7 @@
                     </div>
                     
                     <label for="exampleMessage">Message</label>
-                    <input class="h-full-width" type="text" name="Message" placeholder="Your Message" id="exampleMessage">
+                    <textarea class="h-full-width" name="Message" placeholder="Your Message" id="exampleMessage"></textarea>
                 
                     <input class="btn--primary h-full-width" type="submit" value="Send">
                 </form>
